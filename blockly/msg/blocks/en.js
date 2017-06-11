@@ -1,0 +1,9 @@
+Blockly.Msg.WEBDUINO_G3_NEW = "PM2.5 , rx:";
+Blockly.Msg.WEBDUINO_G3_TX = "tx:";
+Blockly.Msg.WEBDUINO_G3_GET = "detect pm2.5 and pm10 over every";
+Blockly.Msg.WEBDUINO_G3_READ = "detect pm2.5 and pm10";
+Blockly.Msg.WEBDUINO_G3_GET_TIME = "ms ( 1/1000 sec )";
+Blockly.Msg.WEBDUINO_G3_GET_DO = "do";
+Blockly.Msg.WEBDUINO_G3_GET_NOW = "‘s";
+Blockly.Msg.WEBDUINO_G3_GET_PM25 = "PM2.5";
+Blockly.Msg.WEBDUINO_G3_GET_PM10 = "PM10";

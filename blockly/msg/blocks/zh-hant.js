@@ -1,0 +1,9 @@
+Blockly.Msg.WEBDUINO_G3_NEW = "細懸浮微粒傳感器，接收腳位";
+Blockly.Msg.WEBDUINO_G3_TX = "傳送腳位";
+Blockly.Msg.WEBDUINO_G3_GET = "偵測細懸浮微粒，每";
+Blockly.Msg.WEBDUINO_G3_READ = "偵測細懸浮微粒";
+Blockly.Msg.WEBDUINO_G3_GET_TIME = "毫秒 ( 1/1000 秒 ) 擷取一次";
+Blockly.Msg.WEBDUINO_G3_GET_DO = "執行";
+Blockly.Msg.WEBDUINO_G3_GET_NOW = "所測得目前的";
+Blockly.Msg.WEBDUINO_G3_GET_PM25 = "PM2.5";
+Blockly.Msg.WEBDUINO_G3_GET_PM10 = "PM10";
