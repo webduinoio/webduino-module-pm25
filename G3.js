@@ -93,9 +93,7 @@
         0x10, 0x03, recvPin, 0x00
       ]);
     } else {
-      self._board.sendSysex(G3_MESSAGE[0], [G3_MESSAGE[1],
-        0x40, 0x02, 0, 0, 0
-      ]);
+      self._board.sendSysex(G3_MESSAGE[0], [G3_MESSAGE[1], 0x41]);
     }
     //console.log("state:", state);
     //console.log("recvPin:", recvPin, ",sec:", delaySec, ",time:", repeatTime);
