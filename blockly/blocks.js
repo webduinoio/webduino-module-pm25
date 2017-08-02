@@ -65,7 +65,9 @@ Blockly.Blocks['g3_get'] = {
 
 Blockly.Blocks['g3_read'] = {
   init: function () {
+    this.setCommentText('此積木會將動作寫入開發板，瀏覽器關閉後仍會持續運行');
     this.appendDummyInput()
+      .appendField(Blockly.Msg.WEBDUINO_G3_FIRMWARE,"硬體設定")
       .appendField(new Blockly.FieldVariable("g3"), "var_")
       .appendField(Blockly.Msg.WEBDUINO_G3_READ, "get PM2.5 and PM10");
     this.appendStatementInput("do")
@@ -80,16 +82,17 @@ Blockly.Blocks['g3_read'] = {
 
 Blockly.Blocks['g3_trigger'] = {
   init: function() {
+    this.setCommentText('此積木會將動作寫入開發板，瀏覽器關閉後仍會持續運行');
     this.appendDummyInput()
-        .appendField("設定")
+      .appendField(Blockly.Msg.WEBDUINO_G3_FIRMWARE,"硬體設定")
         .appendField(new Blockly.FieldVariable("g3"), "g3")
-        .appendField("定時啟動")
+        .appendField(Blockly.Msg.WEBDUINO_G3_TIMER)
         .appendField(new Blockly.FieldDropdown([["on", "true"], ["off", "false"]]), "state")
-        .appendField("每隔")
+        .appendField(Blockly.Msg.WEBDUINO_G3_INTERVAL)
         .appendField(new Blockly.FieldDropdown([["1", "1"], ["3", "3"], ["5", "5"], ["10", "10"], ["30", "30"], ["60", "60"], ["180", "180"]]), "delaySec")
-        .appendField("秒，共執行")
+        .appendField(Blockly.Msg.WEBDUINO_G3_RUN)
         .appendField(new Blockly.FieldDropdown([["無限", "-1"]]), "repeatTime")
-        .appendField("次");
+        .appendField(Blockly.Msg.WEBDUINO_G3_TIMES);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(65);
