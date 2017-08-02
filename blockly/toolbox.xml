@@ -15,9 +15,9 @@
       </block>
     </value>
   </block>
+  <block type="g3_get_number"></block>
   <block type="g3_trigger">
   </block>
   <block type="g3_read">
   </block>
-  <block type="g3_get_number"></block>
 </category>

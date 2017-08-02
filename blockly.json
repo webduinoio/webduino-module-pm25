@@ -1,6 +1,6 @@
 {
   "types": ["g3_new","g3_get","g3_get_number","g3_read","g3_trigger"],
-  "category": "catMenu2",
+  "category": "catMenu3",
   "scripts": [
     "blockly/blocks.js",
     "blockly/javascript.js"
