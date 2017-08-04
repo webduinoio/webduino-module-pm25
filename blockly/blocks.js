@@ -1,3 +1,6 @@
+var mainUrl = 'https://tutorials.webduino.io/zh-tw/docs/';
+var utmUrl = '?utm_source=cloud-blockly&utm_campaign=help_url';
+
 Blockly.Blocks['g3_new'] = {
   init: function () {
     this.appendDummyInput()
@@ -40,7 +43,7 @@ Blockly.Blocks['g3_new'] = {
     this.setOutput(true);
     this.setTooltip('');
     this.setColour(230);
-    this.setHelpUrl('https://webduino.io');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
 
@@ -59,7 +62,7 @@ Blockly.Blocks['g3_get'] = {
     this.setNextStatement(true);
     this.setTooltip('');
     this.setColour(65);
-    this.setHelpUrl('https://webduino.io');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
 
@@ -76,7 +79,7 @@ Blockly.Blocks['g3_read'] = {
     this.setNextStatement(true);
     this.setTooltip('');
     this.setColour(65);
-    this.setHelpUrl('https://webduino.io');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
 
@@ -97,7 +100,7 @@ Blockly.Blocks['g3_trigger'] = {
     this.setNextStatement(true, null);
     this.setColour(65);
     this.setTooltip('');
-    this.setHelpUrl('http://webduino.io/');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
 
@@ -113,6 +116,6 @@ Blockly.Blocks['g3_get_number'] = {
     this.setOutput(true);
     this.setTooltip('');
     this.setColour(35);
-    this.setHelpUrl('https://webduino.io');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
