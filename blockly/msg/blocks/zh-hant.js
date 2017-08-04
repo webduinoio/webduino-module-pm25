@@ -12,3 +12,4 @@ Blockly.Msg.WEBDUINO_G3_TIMER = "定時啟動";
 Blockly.Msg.WEBDUINO_G3_INTERVAL = "每隔";
 Blockly.Msg.WEBDUINO_G3_RUN = "秒，執行";
 Blockly.Msg.WEBDUINO_G3_TIMES = "次";
+Blockly.Msg.WEBDUINO_G3_FIRMWARE_COMMENT = "此積木會將動作寫入開發板，瀏覽器關閉後仍會持續運行";
