@@ -50,14 +50,15 @@
   }
 
   function processG3Data(self, data) {
-    var str = '',
-      i = 1;
-    for (var i = 2; i < data.length; i++) {
-      str += String.fromCharCode(data[i]);
-    }
-    str = str.split(',');
+    var stringValue = data.slice(2).map(function (val) {
+      return String.fromCharCode(val);
+    }).join('');
+
+    var value = stringValue.split(',').map(function (val) {
+      return parseInt(val);
+    });
     self._lastRecv = Date.now();
-    self.emit(G3Event.READ, str[0], str[1]);
+    self.emit(G3Event.READ, value[0], value[1]);
   }
 
   G3.prototype = proto = Object.create(Module.prototype, {
@@ -81,7 +82,6 @@
   proto.trigger = function (state, delaySec, repeatTime) {
     var self = this;
     var recvPin = this._rx._number;
-    //board.send([0xF0, 0x04, 0x10, 0x40, 0x01, 0x04, 0x3E, 0x3E, 0x10, 0x03, 0x0A, 0x00, 0xF7]); 
     var delayHigh6bit = (delaySec & 0x0FC0) >> 6;
     var delayLow6bit = (delaySec & 0x3F);
     var repeatHigh6bit = (repeatTime & 0x0FC0) >> 6;
@@ -95,8 +95,6 @@
     } else {
       self._board.sendSysex(G3_MESSAGE[0], [G3_MESSAGE[1], 0x41]);
     }
-    //console.log("state:", state);
-    //console.log("recvPin:", recvPin, ",sec:", delaySec, ",time:", repeatTime);
   }
 
   proto.read = function (callback, interval) {
