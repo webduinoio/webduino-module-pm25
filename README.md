@@ -1,6 +1,6 @@
 # webduino-module-pm25
 
-Webduino Module for PM25.
+Webduino Module for G3 sensor.
 
 ## Installation
 
