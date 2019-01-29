@@ -1,4 +1,4 @@
-<category id="catG3" index="3">
+<category id="catG3" tags="fly,mark1,smart" index="3">
   <block type="variables_set">
     <field name="VAR">g3</field>
     <value name="VALUE">
